@@ -1,4 +1,4 @@
-package com.example.fooddeliveryapp.Activity;
+package com.example.food_delivery_app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.fooddeliveryapp.Adapter.CartListAdapter;
-import com.example.fooddeliveryapp.Helper.ManagmentCart;
-import com.example.fooddeliveryapp.R;
+import com.example.food_delivery_app.Adapter.CartListAdapter;
+import com.example.food_delivery_app.Helper.ManagmentCart;
+import com.example.food_delivery_app.R;
 
 public class CartActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;

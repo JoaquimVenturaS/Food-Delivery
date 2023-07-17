@@ -1,4 +1,4 @@
-package com.example.fooddeliveryapp.Activity.splash;
+package com.example.food_delivery_app.Activity.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,8 @@ import android.os.Handler;
 import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.fooddeliveryapp.Activity.MainActivity;
-import com.example.fooddeliveryapp.R;
+import com.example.food_delivery_app.Activity.MainActivity;
+import com.example.food_delivery_app.R;
 
 public class SplashScreen extends AppCompatActivity {
 

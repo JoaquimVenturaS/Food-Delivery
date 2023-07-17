@@ -1,9 +1,9 @@
-package com.example.fooddeliveryapp.Helper;
+package com.example.food_delivery_app.Helper;
 
 import android.content.Context;
 import android.widget.Toast;
 
-import com.example.fooddeliveryapp.Domain.FoodDomain;
+import com.example.food_delivery_app.Domain.FoodDomain;
 
 import java.util.ArrayList;
 

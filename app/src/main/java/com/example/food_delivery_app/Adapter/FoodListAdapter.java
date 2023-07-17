@@ -1,4 +1,4 @@
-package com.example.fooddeliveryapp.Adapter;
+package com.example.food_delivery_app.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.GranularRoundedCorners;
-import com.example.fooddeliveryapp.Activity.DetailActivity;
-import com.example.fooddeliveryapp.Domain.FoodDomain;
-import com.example.fooddeliveryapp.R;
+import com.example.food_delivery_app.Activity.DetailActivity;
+import com.example.food_delivery_app.Domain.FoodDomain;
+import com.example.food_delivery_app.R;
 
 import java.util.ArrayList;
 

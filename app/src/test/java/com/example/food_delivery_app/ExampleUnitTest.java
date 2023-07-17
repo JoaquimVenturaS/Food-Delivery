@@ -1,4 +1,4 @@
-package com.example.fooddeliveryapp;
+package com.example.food_delivery_app;
 
 import org.junit.Test;
 

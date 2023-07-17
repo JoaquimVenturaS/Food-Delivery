@@ -1,4 +1,4 @@
-package com.example.fooddeliveryapp.Activity;
+package com.example.food_delivery_app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.fooddeliveryapp.Domain.FoodDomain;
-import com.example.fooddeliveryapp.Helper.ManagmentCart;
-import com.example.fooddeliveryapp.R;
+import com.example.food_delivery_app.Domain.FoodDomain;
+import com.example.food_delivery_app.Helper.ManagmentCart;
+import com.example.food_delivery_app.R;
 
 public class DetailActivity extends AppCompatActivity {
     private Button addToCartBtn;

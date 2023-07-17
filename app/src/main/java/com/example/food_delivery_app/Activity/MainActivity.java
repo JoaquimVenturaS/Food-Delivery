@@ -1,4 +1,4 @@
-package com.example.fooddeliveryapp.Activity;
+package com.example.food_delivery_app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,9 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-import com.example.fooddeliveryapp.Adapter.FoodListAdapter;
-import com.example.fooddeliveryapp.Domain.FoodDomain;
-import com.example.fooddeliveryapp.R;
+import com.example.food_delivery_app.Adapter.FoodListAdapter;
+import com.example.food_delivery_app.Domain.FoodDomain;
+import com.example.food_delivery_app.R;
 
 import java.util.ArrayList;
 
