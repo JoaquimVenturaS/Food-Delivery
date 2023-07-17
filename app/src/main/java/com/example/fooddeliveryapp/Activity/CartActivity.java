@@ -5,15 +5,14 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.fooddeliveryapp.Adapter.CartListAdapter;
-import com.example.fooddeliveryapp.Helper.ChangeNumberItemsListener;
 import com.example.fooddeliveryapp.Helper.ManagmentCart;
 import com.example.fooddeliveryapp.R;
 
@@ -47,21 +46,19 @@ public class CartActivity extends AppCompatActivity {
     }
 
     private void initList() {
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        LinearLayoutManager linearLayoutManager = new
+                LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerViewList.setLayoutManager(linearLayoutManager);
-        adapter = new CartListAdapter(managmentCart.getListCart(), this, new ChangeNumberItemsListener() {
-            @Override
-            public void changed() {
-                calculateCart();
-            }
-        });
+        adapter = new CartListAdapter(
+                managmentCart.getListCart(), this, this::calculateCart
+        );
 
         recyclerViewList.setAdapter(adapter);
 
-        if(managmentCart.getListCart().isEmpty()){
+        if (managmentCart.getListCart().isEmpty()) {
             emptyTxt.setVisibility(View.VISIBLE);
             scrollView.setVisibility(View.GONE);
-        }else{
+        } else {
             emptyTxt.setVisibility(View.GONE);
             scrollView.setVisibility(View.VISIBLE);
         }
@@ -93,8 +90,12 @@ public class CartActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
     }
 
-    private void setupListeners(){
+    @SuppressLint("NotifyDataSetChanged")
+    private void setupListeners() {
         button.setOnClickListener(view -> {
+            managmentCart.cleanFoodList(managmentCart.getListCart());
+            recyclerViewList.getAdapter().notifyDataSetChanged();
+            initList();
             Toast.makeText(this, "Pedido Feito!", Toast.LENGTH_LONG).show();
             finish();
         });

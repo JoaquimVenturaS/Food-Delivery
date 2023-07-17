@@ -57,6 +57,13 @@ public class ManagmentCart {
         changeNumberItemsListener.changed();
     }
 
+    public void cleanFoodList(ArrayList<FoodDomain> listfood) {
+        for (FoodDomain f: listfood) {
+            listfood.remove(f);
+        }
+        tinyDB.putListObject("CartList", listfood);
+    }
+
     public Double getTotalFee() {
         ArrayList<FoodDomain> listfood2 = getListCart();
         double fee = 0;

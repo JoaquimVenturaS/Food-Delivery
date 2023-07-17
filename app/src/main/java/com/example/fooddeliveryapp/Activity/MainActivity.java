@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 " é a refeição perfeita para qualquer ocasião.","fast_1",15,20,120,4));
         items.add(new FoodDomain("Pizza Peperoni","Experimente a Itália com nossa deliciosa Pizza de Calabresa. Feita com massa recém-enrolada, molho de tomate picante, queijo mussarela e coberta com fatias de calabresa picante, esta pizza certamente agradará a todos. Perfeitamente assada em forno a lenha forno, é a escolha perfeita para um almoço rápido ou um jantar em família."
                 ,"fast_2",10,25,200,5));
-        items.add(new FoodDomain("Pizza Vegetal","Procurando uma opção mais saudável? Experimente nossa Pizza de Legumes, feita com uma variedade de vegetais frescos, como pimentões, cebolas, cogumelos, azeitonas e tomates. Coberta com queijo mussarela e molho de tomate picante, esta pizza é cheia de sabor e bondade. Perfeito para vegetarianos e qualquer pessoa que queira adicionar mais verduras à sua dieta."
+        items.add(new FoodDomain("Pizza Vegetariana","Procurando uma opção mais saudável? Experimente nossa Pizza de Legumes, feita com uma variedade de vegetais frescos, como pimentões, cebolas, cogumelos, azeitonas e tomates. Coberta com queijo mussarela e molho de tomate picante, esta pizza é cheia de sabor e bondade. Perfeito para vegetarianos e qualquer pessoa que queira adicionar mais verduras à sua dieta."
                 ,"fast_3",13,30,100,4.5));
 
         recyclerViewFood=findViewById(R.id.view1);
